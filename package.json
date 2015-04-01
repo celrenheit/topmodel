@@ -1,0 +1,28 @@
+{
+  "name": "topmodel",
+  "version": "0.1.0",
+  "description": "TopModel",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "babel": "^4.7.16",
+    "gremlin-client": "^0.3.1",
+    "is_js": "^0.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/celrenheit/topmodel"
+  },
+  "author": "Celrenheit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/celrenheit/topmodel/issues"
+  },
+  "homepage": "https://github.com/celrenheit/topmodel"
+}
