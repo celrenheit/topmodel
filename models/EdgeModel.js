@@ -1,6 +1,7 @@
-export default class EdgeModel {
-	constructor(model) {
-		console.log("EdgeModel: Got this from super()");
-		console.log(model);
+import Model from './Model'
+
+export default class EdgeModel extends Model {
+	constructor() {
+		super(...arguments)
 	}
 }
