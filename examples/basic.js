@@ -13,9 +13,6 @@ class FriendOf extends topmodel.Graph.EdgeModel {
 		this.goingTo(User);
 	}
 
-	constructor() {
-		super(this)
-	}
 }
 
 class User extends topmodel.Graph.VertexModel {
@@ -24,6 +21,15 @@ class User extends topmodel.Graph.VertexModel {
 		this.string('name');
 		this.string('password');
 		this.edge(FriendOf);
+	}
+
+	initialize(props = {}, options = {}) {
+		console.log('Initialization');
+	}
+
+	set(key, value) {
+		console.log('user set', key, value);
+		super.set(...arguments)
 	}
 }
 
