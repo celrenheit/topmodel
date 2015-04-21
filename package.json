@@ -7,7 +7,7 @@
     "example": "examples"
   },
   "dependencies": {
-    "babel": "^4.7.16",
+    "babel": "^5.1.11",
     "gremlin-client": "^0.3.1",
     "is_js": "^0.7.3"
   },
