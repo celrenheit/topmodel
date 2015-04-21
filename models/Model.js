@@ -3,6 +3,10 @@ export default class Model {
 		this.props = props;
 		this.options = options;
 		console.log('Base model constructor', props);
+
+
+		if(typeof this.initialize === "function")
+			this.initialize(props, options);
 	}
 
 	get (key) {
