@@ -1,5 +1,10 @@
 import topmodel from '../index'
 
+topmodel.configure((config) => {
+	config.setRiakCluster(["localhost:8087", "localhost:8089"])
+	config.setGremlinClientConfig(8183, "gremlin-server.dev", {session:true})
+})
+
 class Item extends topmodel.Graph.VertexModel {
 
 }
