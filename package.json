@@ -9,7 +9,9 @@
   "dependencies": {
     "babel": "^5.1.11",
     "gremlin-client": "^0.3.1",
-    "is_js": "^0.7.3"
+    "is_js": "^0.7.3",
+    "lodash": "^3.7.0",
+    "merge-defaults": "^0.2.1"
   },
   "devDependencies": {},
   "scripts": {
