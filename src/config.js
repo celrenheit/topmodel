@@ -1,5 +1,6 @@
 import _ from 'lodash'
 import mergeDefaults from 'merge-defaults'
+import is from 'is_js'
 _.mergeDefaults = mergeDefaults
 
 class ConfigManager {
@@ -16,7 +17,7 @@ class ConfigManager {
 	}
 
 	setRiakCluster(nodes) {
-		if(arguments.length === 1 && nodes instanceof Array)
+		if(arguments.length === 1 && is.array(nodes))
 			this.Riak.nodes = nodes
 		else
 			this.Riak.nodes = [].slice.call(arguments)
